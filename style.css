@@ -1,0 +1,357 @@
+/*
+Theme Name: sz
+Author: resiakminor
+Author URI: http://wolf-hill.com/
+Description: The 2016 theme for Sara Zielinski
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: sz
+
+This theme is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* -- Home Page Styles -- */
+html, body {
+	height: 100%;
+	margin-top: 0 !important;
+}
+
+.home-back {
+	background: url('http://sarazielinski.wolf-hill.com/wp-content/themes/sz/images/mock.jpg') no-repeat 50% 50% fixed; 
+	min-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+  	background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+}
+
+.home-back-alt {
+	background: rgba(255, 255, 255, 1);
+	min-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+  	background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+}
+
+.trans-back {
+ 	background: rgba(255, 255, 255, 0.2);
+	min-width: 100%;
+	min-height: 100%;
+	background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+}
+
+.trans-back-alt {
+ 	background: rgba(255, 255, 255, 0.7);
+	min-width: 100%;
+	min-height: 100%;
+	background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+}
+
+a, a:active, a:focus {
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* -- Responsive Styles -- */
+.row {
+  margin-bottom: 0;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.grid img {
+	max-width:100%;
+	display: block;
+}
+
+/* -- Nav Styles -- */
+.logo {
+	max-width:70%;
+	max-height:70%;
+	padding-bottom:10px;
+}
+
+.logo-alt {
+	max-width:100%;
+	max-height:100%;
+	padding-bottom:10px;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+.list-style {
+	list-style: none;
+	width: 70%;
+}
+
+.list-style-alt {
+	list-style: none !important;
+	width: 80%;
+	padding:0;
+	margin-left: 40px;
+}
+
+.list-style-mobile {
+	list-style: none;
+	width: 100%;
+}
+
+.nav-style {
+	max-width:100%;
+	max-height:100%;
+	color: #000;
+	padding: 5px 0 5px 0;
+	border: none;
+	text-align: center;
+	font: 2rem "Arial Black", sans-serif;
+	border-radius: 15px;
+}
+
+.nav-el {
+	max-width:70%;
+	max-height:70%;
+}
+
+li:hover {
+	background: rgba(220, 220, 220, 0.9);
+	border-radius: 15px;
+}
+
+.nav-style a {
+	color: #000;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+  display: none;
+}
+
+/* -- Page Content -- */
+
+.entry-content p {
+	font: 15rem  'Impact', sans-serif;
+	padding: 10% 0 5% 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #660000;
+}
+
+/* -- Footer Styles -- */
+footer {
+	display: block;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: relative;
+}
+
+footer h3 {
+	color: #5E160B;
+	font-weight: bold;
+}
+
+.copyright {
+	color: rgb(0,0,0);
+	font: 1.3rem "Arial Black", sans-serif;
+	vertical-align: middle;
+	padding-bottom: 25px;
+}
+
+/* -- Media Queries -- */
+@media only screen and (max-width: 1400px) {
+	.row {
+  		margin-bottom: 10px;
+  		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.row {
+  		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.row {
+  		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.row {
+  		margin-bottom: 70px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.row {
+  		margin-bottom: 90px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	
+	#desktop-nav {
+		display: none;
+	}
+	
+	.navbar-header {
+		padding-top: 20px;
+	}
+	
+	.navbar-static-top {
+  		display: block;
+	}
+	
+	.icon-bar {
+		display:block;
+		background-color: #000;
+	}
+	
+	.logo-mobile {
+		max-width: 40%;
+		max-height: 40%;
+		top: 0;
+		left:0;
+		display:block;
+		float:left;
+		clear:both;
+	}
+	
+	.list-style {
+		padding-left: 30%;
+	}
+
+	.entry-content p {
+		font: 5rem  'Impact', sans-serif;
+		padding: 1% 0 1% 0;
+	}
+	
+	.grid {
+		padding-left: 10%;
+	}
+
+	.logo {
+ 	   max-width: 65%;
+ 	   max-height: 75%;
+ 	   padding-left: 28%;
+	}
+	
+	.logo-alt {
+		max-width: 75%;
+		max-height:75%;
+	}	
+	
+}
+
+@media only screen and (max-width: 980px) {
+	.row {
+  		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.grid {
+		padding-left: 7%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.grid {
+		padding-left: 5%;
+	}
+
+	.list-style-alt {
+		width: 90%;
+		margin-left: 0;
+	}	
+}
+
+@media only screen and (max-width: 768px) {
+	.logo-mobile {
+		padding-left:0;		
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.logo-mobile {
+		max-width: 36%;
+		max-height: 36%;	
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.logo-mobile {
+		max-width: 38%;
+		max-height: 38%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.logo-mobile {
+		max-width: 44%;
+		max-height: 44%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.logo-mobile {
+		max-width: 48%;
+		max-height: 48%;	
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.logo-mobile {
+		max-width: 54%;
+		max-height: 54%;		
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.logo-mobile {
+		max-width: 58%;
+		max-height: 58%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.logo-mobile {
+		max-width: 62%;
+		max-height: 62%;
+	}
+	
+	.grid {
+		padding-left: 2%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.logo-mobile {
+		max-width: 70%;
+		max-height: 70%;
+	}
+}

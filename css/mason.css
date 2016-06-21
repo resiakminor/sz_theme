@@ -1,0 +1,183 @@
+/* ---- grid ---- */
+
+.grid {
+  max-width: 1200px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 17.15%;
+  padding-right: 20px;
+  float: left;
+  /* vertical gutter */
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* ---- Media Queries ---- */
+
+@media only screen and (max-width: 1400px) {
+	.grid-item {
+		width: 17%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.grid-item {
+		width: 19%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.grid-item {
+		width: 21%;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.grid-item {
+		width: 23%;
+	}
+}
+
+@media only screen and (max-width: 1015px) {
+	.grid {
+  		padding-left: 60px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.grid-item {
+		width: 24%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.grid-item {
+		width: 19%;
+	}
+	
+	.grid {
+  		padding-left: 15px;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.grid {
+  		padding-left: 60px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.grid-item {
+		width: 20%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.grid-item {
+		width: 22%;
+	}
+	
+	.grid {
+  		padding-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-item {
+		width: 23%;
+	}
+	
+	.grid {
+  		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.grid-item {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 735px) {
+	.grid {
+		padding-left: 60px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.grid-item {
+		width: 27%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.grid-item {
+		width: 29.33%;
+	}
+	
+	.grid {
+		padding-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.grid-item {
+		width: 31%;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.grid-item {
+		width: 33%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.grid-item {
+		width: 35%;
+	}
+	
+	.grid {
+  		padding-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	.grid-item {
+		width: 36%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-item {
+		width: 38%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.grid-item {
+		width: 43%;
+	}
+	
+	.grid {
+		padding-left: 15px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.grid-item {
+		width: 47%;
+	}
+}

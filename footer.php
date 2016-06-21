@@ -1,6 +1,6 @@
-<footer>
+<footer class="navbar navbar-fixed-bottom">
 				<div class="copyright">
-					&copy; 2015 Sara Frances Zielinski
+					&copy; <?php echo date("Y");?> Sara Zielinski
 				</div>
 			</footer>
       	</div>

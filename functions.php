@@ -13,14 +13,14 @@ remove_action('wp_head', 'wp_generator');
 function enqueue_styles() {
      
     /** REGISTER style.css and otherstyles.css **/
-    wp_register_style( 'style', THEME_DIR . '/style.css', array(), '1', 'all' );
+    wp_register_style( 'bootstrap.min', THEME_DIR . '/css/bootstrap.min.css', array(), '1', 'all' );
+    wp_enqueue_style( 'bootstrap.min' );
+    wp_register_style( 'style', THEME_DIR . '/style.css', array('bootstrap.min'), '1', 'all' );
     wp_enqueue_style( 'style' );
     wp_register_style( 'mason', THEME_DIR . '/css/mason.css', array('style'), '1', 'all' );
     wp_enqueue_style( 'mason' );
     wp_register_style( 'box', THEME_DIR . '/css/box.css', array('style','mason'), '1', 'all' );
     wp_enqueue_style( 'box' );     
-    wp_register_style( 'bootstrap.min', THEME_DIR . '/css/bootstrap.min.css', array('style','mason','box'), '1', 'all' );
-    wp_enqueue_style( 'bootstrap.min' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
@@ -35,7 +35,7 @@ function enqueue_scripts() {
     wp_enqueue_script( 'jquery.lightbox' );     
     wp_register_script( 'box', THEME_DIR . '/javascript/box.js', array( 'jquery','bootstrap.min','jquery.lightbox' ), '1', true );
     wp_enqueue_script( 'box' );
-    wp_register_script( 'masonry.pkgd.min', THEME_DIR . '/javascript/masonry.pkgd.min.js', array( 'jquery','bootstrap.min','jquery.lightbox','box' ), '1', true );
+    wp_register_script( 'masonry.pkgd.min', THEME_DIR . '/javascript/masonry.pkgd.min.js', array( 'jquery','bootstrap.min','jquery.lightbox','box','imagesloaded' ), '1', true );
     wp_enqueue_script( 'masonry.pkgd.min' );
     wp_register_script( 'mason', THEME_DIR . '/javascript/mason.js', array( 'jquery','bootstrap.min','jquery.lightbox','box','masonry.pkgd.min.js' ), '1', true );
     wp_enqueue_script( 'mason' );
@@ -43,6 +43,10 @@ function enqueue_scripts() {
     wp_enqueue_script( 'stick' );
     wp_register_script( 'jquery.unveil', THEME_DIR . '/javascript/jquery.unveil.js', array( 'jquery' ), '1', false );
     wp_enqueue_script( 'jquery.unveil' );
+    wp_register_script( 'imagesloaded', THEME_DIR . '/javascript/imagesloaded.pkgd.min.js', array( 'jquery' ), '1', false );
+    wp_enqueue_script( 'imagesloaded' );
+    wp_register_script( 'images', THEME_DIR . '/javascript/images.js', array( 'jquery','imagesloaded' ), '1', false );
+    wp_enqueue_script( 'images' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 

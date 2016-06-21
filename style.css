@@ -19,6 +19,11 @@ html, body {
 	margin-top: 0 !important;
 }
 
+body {
+	padding-bottom: 1px;
+	margin-bottom: -1px;
+}
+
 .home-back {
 	background: url('http://sarazielinski.wolf-hill.com/wp-content/themes/sz/images/mock.jpg') no-repeat 50% 50% fixed; 
 	min-width: 100%;
@@ -42,7 +47,7 @@ html, body {
 }
 
 .trans-back {
- 	background: rgba(255, 255, 255, 0.2);
+ 	background: rgba(255, 255, 255, 0.1);
 	min-width: 100%;
 	min-height: 100%;
 	background-size: cover;
@@ -178,6 +183,7 @@ footer h3 {
 	font: 1.3rem "Arial Black", sans-serif;
 	vertical-align: middle;
 	padding-bottom: 25px;
+	text-transform: uppercase;
 }
 
 /* -- Media Queries -- */
